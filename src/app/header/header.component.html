@@ -1,27 +1,30 @@
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="container-header">
-            <a href="#" class="navbar-brand">Clothing Shop</a>
-        </div>
-        <div class="clollapse navbvar0collapse">
-            <ul class="nav navbar-nav">
-                <li><button><a href="#">Women</a></button></li>
-                <li><button><a href="#">Men</a></button></li>
-            </ul>
-            <input type="text" placeholder="Search..">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <ul class="dropdown-menu">
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul>
-                <li><button class="myacount-dropdwon"></button></li>
-                <li><button class="favorite-item"></button></li>
-                <li><button class="bag"></button></li>
-            </ul>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.component.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex-container">
+        <nav class="navbar navbar-default">
+            <div class="flex-item">
+                <div class="container-header">
+                    <a href="#" class="navbar-brand">Clothing Shop</a>
+                    <button><a href="women">Women</a></button>
+                    <button routerLink="men">Men</button>
+                    <button routerLink="products">Products</button>
+                    <input type="text" placeholder="Search...">
+                    <button class="myacount-dropdwon"></button>
+                    <button class="favorite-item"></button>
+                    <button class="bag"></button>
+                </div>
+            </div>
+        </nav>
+
     </div>
-</nav>
+</body>
+</html>

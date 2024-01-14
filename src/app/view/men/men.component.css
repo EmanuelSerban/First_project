@@ -1,20 +1,12 @@
-*{
-    margin: 1px;
-    padding: 0;
-    box-sizing:  border-box;
-}
-body {
-    font-family: sans-serif ;
-}
-
-.flex-container {
+.flex-container2 {
     background-color: #bcc4cd;
-    max-width: 100%;
+    max-width: 90%;
     height: 50px;
     padding: 10px;
     margin: 0 auto;
 }
-.flex-container {  
+
+.flex-container2 {  
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -23,9 +15,11 @@ body {
     align-content: center;
 }
 
-/* .flex-item {
+flex-item2 {
     font-weight: bold;
     background-color: #7c7979;
     height: 50px;
     width: 100%;
-} */
+    flex-basis: 300px;
+    flex: 1;
+}

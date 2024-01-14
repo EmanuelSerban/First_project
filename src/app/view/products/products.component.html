@@ -1,1 +1,58 @@
-<p>products works!</p>
+<!-- 5 cl   index name quantity price active 
+construiesc array
+afisare header
+afisare valori ngFor
+pe coloana activ - checkbox folosing ngIf
+buton stergere
+-->
+<br>
+<br>
+<div>
+  <form>
+    <label for="index">Index</label>
+    <input type="number" name="index" [(ngModel)]="newProduct.index">
+    <br>
+    <label for="name">Name</label>
+    <input type="string" name="name" [(ngModel)]="newProduct.name">
+    <br>
+    <label for="quantity">Quantity</label>
+    <input type="number" name="quantity" [(ngModel)]="newProduct.quantity">
+    <br>
+    <label for="price">Price</label>
+    <input type="number" name="price" [(ngModel)]="newProduct.price">
+    <br>
+    <label for="active">Active</label>
+    <input type="checkbox" name="active" [(ngModel)]="newProduct.active">
+    <br>
+    <button type="button" (click)="populateTable()">Populează Tabelul</button>
+  </form>
+</div>
+<br>
+<div>
+  <table border="1">
+    <thead>
+      <tr>
+        <th *ngFor="let header of tableHeader">{{ header }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of tableData">
+        <td>{{item.index}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.price}}</td>
+        <td><input type="checkbox" [ngModel]="item.active" [readonly]="true">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- arrays -partea de operatii
+  mutarea indexului de pe obiect pe indexul din ngFor care este autoincrementat (46)
+  
+  display flex html
+  justify content
+  aligne items
+  flex direction
+ -->
