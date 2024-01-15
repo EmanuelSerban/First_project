@@ -1,6 +1,15 @@
+*{
+    margin: 1px;
+    padding: 0;
+    box-sizing:  border-box;
+}
+body {
+    font-family: sans-serif ;
+}
+
 .flex-container2 {
     background-color: #bcc4cd;
-    max-width: 90%;
+    max-width: 100%;
     height: 50px;
     padding: 10px;
     margin: 0 auto;
