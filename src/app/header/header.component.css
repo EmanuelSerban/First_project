@@ -1,13 +1,3 @@
-*{
-    margin: 1px;
-    padding: 0;
-    box-sizing:  border-box;
-}
-body {
-    font-family: sans-serif ;
-    background: linear-gradient(to right, #67de8e, #b6c233);
-}
-
 .flex-container {
     background-color: #bcc4cd;
     max-width: 100%;
@@ -24,9 +14,42 @@ body {
     align-content: center;
 }
 
-/* .flex-item {
+input:focus {
+    background-color: #403c3c;
+}
+
+.main-container {
+    background: linear-gradient(to right, #67de8e, #b6c233);
+    max-width: 100%;
+    height: 500px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.flex-container2 {
+    background-color: #bcc4cd;
+    max-width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.flex-container2 {  
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+flex-item2 {
     font-weight: bold;
     background-color: #7c7979;
     height: 50px;
     width: 100%;
-} */
+    flex-basis: 300px;
+    flex: 1;
+}
