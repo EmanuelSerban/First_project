@@ -1,3 +1,27 @@
+a {
+    font-weight: 700;
+    text-align: left;
+    font-size: 25px;
+    font-family: sans-serif;
+    background: linear-gradient(90deg, #000, rgba(255, 255, 0.2), #000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 76%;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    align-items: center;
+}
+
+h4 {
+    padding: 2px;
+}
+
 .flex-container {
     background-color: #bcc4cd;
     max-width: 100%;

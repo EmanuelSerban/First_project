@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { WomenComponent } from './view/women/women.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { MainComponent } from './main/main.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -15,13 +17,16 @@ import { AppRoutingModule } from './app-routing.module';
     ProductsComponent,
     HeaderComponent,
     WomenComponent,
+    MainComponent,
+    FooterComponent,
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
 
   ],
   providers: [],
