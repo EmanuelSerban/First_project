@@ -23,6 +23,7 @@ p {
 }
 
 .homepage {
+    background-image: url(https://th.bing.com/th/id/R.0ca8c974e570c079e2aa32ce633a654b?rik=ERbb8%2fc4h7mDZw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fAbstract-Wallpaper-HD-For-Desktop.jpg&ehk=rVnvpFZvInFKitIdKpdtMERWjkSV%2feDIdtH5BxKFmfw%3d&risl=&pid=ImgRaw&r=0);
     padding: 20px 80px;
     align-items: center;
     display: flex;
@@ -48,6 +49,13 @@ p {
     overflow: hidden;
 }
 
+background-image {
+    background-image: url(https://images.pexels.com/photos/1188083/pexels-photo-1188083.png?cs=srgb&dl=sea-dawn-nature-1188083.jpg&fm=jpg);
+}
+
+.menu-item{
+    
+}
 /* .middle-sale-benner-container {
     margin: 0 auto 25 px auto;
     padding: 24px 0px;
