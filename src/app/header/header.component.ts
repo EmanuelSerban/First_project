@@ -13,4 +13,7 @@ export class HeaderComponent {
   subHeaderVisibility() {
     return this.router.url == "/women" || this.router.url == "/men";
   }
+  adminVisibility() {
+    return this.router.url.indexOf("admin") >= 0;
+  }
 }

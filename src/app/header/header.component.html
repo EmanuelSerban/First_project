@@ -1,14 +1,14 @@
 <div class="flex-container">
     <nav class="navbar navbar-default">
         <div class="container-header">
-            <a href="#" class="navbar-brand">Mulsann</a>
+            <a class="navbar-brand" routerLink="">Mulsann</a>
             <button routerLink="women">Women</button>
             <button routerLink="men">Men</button>
-            <!-- <button routerLink="products">Products</button> -->
-            <input type="text" placeholder="Search...">
-            <button class="myacount-dropdwon"></button>
+            <button routerLink="admin/products">Admin</button>
+            <!-- <input type="text" placeholder="Search..."> -->
+            <!-- <button class="myacount-dropdwon"></button>
             <button class="favorite-item">&#9829;</button>
-            <button class="bag"></button>
+            <button class="bag"></button> -->
         </div>
     </nav>
 </div>
@@ -21,6 +21,14 @@
             <button class="clothing"><span>Clothing</span></button>
             <button class="shoes"><span>Shoes</span></button>
             <button class="accessories"><span>Accessories</span></button>
+        </div>
+    </nav>
+</div>
+<div class="sub-header-container" *ngIf="adminVisibility()">
+    <nav>
+        <div class="flex-container2">
+            <button class="products" routerLink="admin/products">Products</button>
+            <button class="cetegory" routerLink="admin/category">Category</button>
         </div>
     </nav>
 </div>

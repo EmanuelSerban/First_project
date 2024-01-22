@@ -6,13 +6,13 @@ pe coloana activ - checkbox folosing ngIf
 buton stergere
 -->
 
-<!-- 
+
 <br>
 <br>
 <div>
   <form>
-    <label for="index">Index</label>
-    <input type="number" name="index" [(ngModel)]="newProduct.index">
+    <label for="ref">Ref</label>
+    <input type="number" name="ref" [(ngModel)]="newProduct.ref">
     <br>
     <label for="name">Name</label>
     <input type="string" name="name" [(ngModel)]="newProduct.name">
@@ -34,12 +34,18 @@ buton stergere
   <table border="1">
     <thead>
       <tr>
-        <th *ngFor="let header of tableHeader">{{ header }}</th>
+        <th>Index</th>
+        <th>Ref</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Active</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of tableData">
-        <td>{{item.index}}</td>
+      <tr *ngFor="let item of tableData; let i = index">
+        <td>{{i}}</td>
+        <td>{{item.ref}}</td>
         <td>{{item.name}}</td>
         <td>{{item.quantity}}</td>
         <td>{{item.price}}</td>
@@ -48,7 +54,7 @@ buton stergere
       </tr>
     </tbody>
   </table>
-</div> -->
+</div>
 
 
 

@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ProductsComponent } from './view/products/products.component';
+import { ProductsComponent } from './view/admin/products/products.component';
 import { HeaderComponent } from './header/header.component';
 import { WomenComponent } from './view/women/women.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { MainComponent } from './main/main.component';
+import { MainComponent } from './view/main/main.component';
 import { FooterComponent } from './footer/footer.component';
+import { CategoryComponent } from './view/admin/category/category.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
     WomenComponent,
     MainComponent,
     FooterComponent,
+    CategoryComponent,
 
   ],
   imports: [
@@ -26,7 +28,7 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    
+
 
   ],
   providers: [],
