@@ -1,1 +1,28 @@
-<p>category works!</p>
+<div>
+    <form>
+      <label for="id">Id</label>
+      <input type="number" name="id" [(ngModel)]="newCategory.id">
+      <br>
+      <label for="name">Name</label>
+      <input type="string" name="name" [(ngModel)]="newCategory.name">
+      <br>
+      <button type="button" (click)="addCategory()">Adauga o noua categorie</button>
+    </form>
+  </div>
+  <br>
+  <div>
+    <table border="">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of tableData; let i = index">
+          <td>{{item.id}}</td>
+          <td>{{item.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
