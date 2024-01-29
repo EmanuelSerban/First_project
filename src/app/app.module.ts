@@ -10,6 +10,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './view/main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { CategoryComponent } from './view/admin/category/category.component';
+import { PriceHistoryComponent } from './view/admin/priceHistory/priceHistory.component';
+
+
 
 
 @NgModule({
@@ -21,15 +24,13 @@ import { CategoryComponent } from './view/admin/category/category.component';
     MainComponent,
     FooterComponent,
     CategoryComponent,
-
+    PriceHistoryComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-
-
   ],
   providers: [],
   bootstrap: [AppComponent]

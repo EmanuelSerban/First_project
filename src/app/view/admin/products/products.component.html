@@ -10,23 +10,29 @@ buton stergere
 <br>
 <br>
 <div>
-  <form>
+  <form #productForm="ngForm">
     <label for="ref">Ref</label>
     <input type="number" name="ref" [(ngModel)]="newProduct.ref">
     <br>
     <label for="name">Name</label>
-    <input type="string" name="name" [(ngModel)]="newProduct.name">
+    <input type="text" id="name" [(ngModel)]="newProduct.name" minlength="1">
+    <span *ngIf="productForm.controls['name']?.hasError('minlength')">Name is required</span>
     <br>
     <label for="quantity">Quantity</label>
-    <input type="number" name="quantity" [(ngModel)]="newProduct.quantity">
+    <input type="number" name="quantity" [(ngModel)]="newProduct.quantity" required [min]="1">
+    <br>
+    <span *ngIf="productForm.controls['quantity']?.hasError('min')">Value must be greater than or equal to 1</span>
     <br>
     <label for="price">Price</label>
-    <input type="number" name="price" [(ngModel)]="newProduct.price">
+    <input type="number" name="price" [(ngModel)]="newProduct.price" required [min]="1">
+    <br>
+    <span *ngIf="productForm.controls['price']?.hasError('min')">Value must be greater than or equal to 1</span>
     <br>
     <label for="active">Active</label>
     <input type="checkbox" name="active" [(ngModel)]="newProduct.active">
     <br>
     <button type="button" (click)="populateTable()">Populează Tabelul</button>
+    <!-- <button type="button" (click)="populateTable(productForm.controls[])">Populează Tabelul</button> -->
   </form>
 </div>
 <br>
@@ -43,14 +49,15 @@ buton stergere
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of tableData; let i = index">
+      <tr *ngFor="let product of tableData; let i = index">
         <td>{{i}}</td>
-        <td>{{item.ref}}</td>
-        <td>{{item.name}}</td>
-        <td>{{item.quantity}}</td>
-        <td>{{item.price}}</td>
-        <td><input type="checkbox" [ngModel]="item.active" [readonly]="true">
+        <td>{{product.ref}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.quantity}}</td>
+        <td>{{product.price}}</td>
+        <td><input type="checkbox" [ngModel]="product.active" [readonly]="true">
         </td>
+        <td><button (click)="removeProduct(i)">removeProduct</button></td>
       </tr>
     </tbody>
   </table>

@@ -1,7 +1,12 @@
-rezolvat 1. Creare clasa pentru componenta Products din admin care sa contina prop. actuale de la produse. Clasa trebuie sa contina un constrctor cu prop. default pentru variabile.
-2. Vei folosi aceasta instantiere de date pentru arrayul de produse initial
-rezolvat 3. pentru componenta de category, creati o clasa care sa contina ID si Name.  
-4. In componenta sa ai un tabel cu coloanele aferente.
-5. In comopnenta sa ai si forma de adaugarea de noi categorii (vezi la Products).
-6. De adaugat o coloana de actiuni pe fiecare tabel care sa contina un buton de stergere. Butonul va apela o functie, care va sterge item-ul cu id-ul trimis pe parametru din functie.
+De implementat validatori pe form grupuri, de adaugat texte explicite pentru fiecare tip de validare, de conditionat functia de submit si afisarea unui mesaj sub buton( invalid data...)
+- Required
+- min
+- max
+- minlenght
+- maxlenght
 
+Trebuie sa citesc despre reactiv forms, sa creez form group si form control si sa vad cum functioneaza prop. touch, valid, prestine, durty, disable, readonly, submitted.
+
+Creare unei noi componente fara ajutor. Creare clasa, initializare arrayul.  - Price History - productId, fromDate, price 
+
+Local storage - de adaugat date din tabelul Products cu ajutorul functiei Json.stringify
